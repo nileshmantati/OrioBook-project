@@ -14,21 +14,30 @@
   <!-- font awesome icons -->
   <link rel="stylesheet" href="css/all.min.css" />
 
+  <!-- Font Family Of Text-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
+
+  <!-- Font Family Of Headings-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Lora:ital,wght@0,400..700;1,400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
   <style>
     .font {
       font-family: "Jost", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: weight;
-      font-style: normal;
+    }
+
+    .font_heading {
+      font-family: "Lora", serif;
     }
   </style>
 </head>
 
-<body>
+<body class="bg-[#FAFAF7]">
   <!-- Topbar Section Start -->
   <div class="px-8 border-b border-b-gray-300">
     <div class="top_bar flex items-center justify-between py-3">
@@ -155,80 +164,118 @@
   <!-- header End -->
 
   <!-- Home Slider Section Start -->
-  <section class="px-8">
-    <div id="default-carousel" class="relative w-full" data-carousel="slide">
-      <!-- Carousel wrapper -->
-      <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-        <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="/docs/images/carousel/carousel-1.svg"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-        </div>
-        <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="/docs/images/carousel/carousel-2.svg"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-        </div>
-        <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="/docs/images/carousel/carousel-3.svg"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-        </div>
-        <!-- Item 4 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="/docs/images/carousel/carousel-4.svg"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-        </div>
-        <!-- Item 5 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="/docs/images/carousel/carousel-5.svg"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-        </div>
-      </div>
-      <!-- Slider indicators -->
-      <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
-          data-carousel-slide-to="0"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
-          data-carousel-slide-to="1"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-          data-carousel-slide-to="2"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
-          data-carousel-slide-to="3"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
-          data-carousel-slide-to="4"></button>
-      </div>
-      <!-- Slider controls -->
-      <button type="button"
-        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        data-carousel-prev>
-        <span
-          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M5 1 1 5l4 4" />
-          </svg>
-          <span class="sr-only">Previous</span>
-        </span>
-      </button>
-      <button type="button"
-        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        data-carousel-next>
-        <span
-          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="m1 9 4-4-4-4" />
-          </svg>
-          <span class="sr-only">Next</span>
-        </span>
-      </button>
+  <!-- <section class="px-8">
+  </section> -->
+  <!-- Home Slider Section End -->
+
+  <!--  Section Start -->
+  <section class="px-8 flex flex-wrap">
+    <div
+      class="max-w-sm p-8 flex flex-col items-center bg-transparent border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+      <span class="duration-100 ease-linear hover:translate-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svgjs="http://svgjs.com/svgjs" width="55" height="55" x="0" y="0" viewBox="0 0 512 511"
+          style="enable-background:new 0 0 512 512" xml:space="preserve">
+          <g>
+            <path fill-rule="evenodd"
+              d="M203.844 227.586h156.14c17.68-52.05 91.45-51.55 108.957 0h13.047v-75.027c0-9.348-7.66-17.008-17.004-17.008H349.941c-8.289 0-15.007-6.719-15.007-15.004V30.512H77.84v18.004h27.59c19.754 0 19.754 30.011 0 30.011H77.84v29.012h72.027c19.758 0 19.758 30.012 0 30.012H77.84v90.031h17.05c17.676-52.05 91.45-51.543 108.954.004zM47.828 78.527H29.824c-19.758 0-19.758-30.011 0-30.011h18.004V15.504C47.828 7.219 54.547.5 62.836.5 85.8.5 338.187.598 338.187.5c41.079 0 76.86 20.336 97.915 55.668l29.421 49.375C491.2 105.832 512 126.836 512 152.555v90.035c0 8.285-6.719 15.004-15.004 15.004h-26.16c-5.379 26.484-28.781 46.015-56.371 46.015s-50.992-19.53-56.371-46.015H205.738c-5.379 26.484-28.781 46.015-56.37 46.015-27.59 0-50.993-19.53-56.372-46.015h-30.16c-8.29 0-15.008-6.719-15.008-15.004v-45.02H14.816c-19.754 0-19.754-30.007 0-30.007h33.012V137.55H14.816c-19.754 0-19.754-30.012 0-30.012h33.012zm386.09 148.11c10.742 10.742 10.742 28.164 0 38.906-17.281 17.281-46.965 4.988-46.965-19.453s29.684-36.735 46.965-19.453zm-3.223-121.098h-65.75V34.58c19.145 6.136 34.801 19.019 45.48 36.944zM168.82 226.637c10.743 10.742 10.743 28.164 0 38.906-17.28 17.281-46.965 4.988-46.965-19.453.004-24.442 29.684-36.735 46.965-19.453zm0 0"
+              fill="" data-original=""></path>
+          </g>
+        </svg>
+      </span>
+      <h1
+        class="mt-5 mb-8 font_heading text-[1.4rem] font-normal tracking-tight text-center dark:text-white capitalize">
+        free
+        standard
+        delivery
+      </h1>
+      <p class="mb-3 w-[50%]: font font-normal text-sm text-center leading-6 text-gray-700 dark:text-gray-400">Lorem
+        ipsum dolor
+        sit amet
+        consectetur
+        adipisicing
+        elit.</p>
+    </div>
+    <div
+      class="max-w-sm p-8 flex flex-col items-center bg-transparent border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+      <span class="duration-100 ease-linear hover:translate-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svgjs="http://svgjs.com/svgjs" width="46" height="46" x="0" y="0" viewBox="0 0 32 32"
+          style="enable-background:new 0 0 512 512" xml:space="preserve">
+          <g>
+            <path
+              d="M29.555 19.833a.998.998 0 0 1-1.387-.277l-.491-.737C26.373 24.648 21.118 29 15 29 7.832 29 2 23.168 2 16S7.832 3 15 3c4.172 0 8.12 2.025 10.56 5.416a1 1 0 1 1-1.624 1.168A11.039 11.039 0 0 0 14.999 5c-6.065 0-11 4.935-11 11s4.935 11 11 11c5.046 0 9.401-3.498 10.64-8.241l-.454.451a.999.999 0 1 1-1.409-1.419l2.518-2.5a1 1 0 0 1 1.536.154l2 3.001a1.001 1.001 0 0 1-.277 1.387zm-11.262-7.04L14 17.086l-2.293-2.293a.999.999 0 1 0-1.414 1.414l3 3a.997.997 0 0 0 1.414 0l5-5a.999.999 0 1 0-1.414-1.414z"
+              fill="" data-original=""></path>
+          </g>
+        </svg>
+      </span>
+      <h1
+        class="mt-5 mb-8 font_heading text-[1.4rem] font-normal tracking-tight text-center dark:text-white capitalize">
+        free easy returns
+      </h1>
+      <p class="mb-3 max-w-md font font-normal text-sm text-center leading-6 text-gray-700 dark:text-gray-400">Lorem
+        ipsum dolor
+        sit amet
+        consectetur
+        adipisicing
+        elit.</p>
+    </div>
+    <div
+      class="max-w-sm p-8 flex flex-col items-center bg-transparent border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+      <span class="duration-100 ease-linear hover:translate-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svgjs="http://svgjs.com/svgjs" width="50" height="50" x="0" y="0" viewBox="0 0 64 64"
+          style="enable-background:new 0 0 512 512" xml:space="preserve">
+          <g>
+            <path
+              d="M54.172 12.209a6.052 6.052 0 0 0-4.391-1.693c-6.9.229-12.515 1.729-16.7 4.461a1.98 1.98 0 0 1-2.164 0c-4.182-2.731-9.8-4.231-16.7-4.46a6.024 6.024 0 0 0-4.39 1.693A5.948 5.948 0 0 0 8 16.519v26.053a5.957 5.957 0 0 0 5.776 5.991c6.1.2 11.176 1.55 15.091 4.023a5.907 5.907 0 0 0 6.268 0c3.913-2.473 8.99-3.826 15.089-4.023A5.957 5.957 0 0 0 56 42.572V16.519a5.948 5.948 0 0 0-1.828-4.31zM13.905 44.564A2 2 0 0 1 12 42.572V16.519a1.985 1.985 0 0 1 .61-1.436 2.011 2.011 0 0 1 1.408-.57h.068c6.156.2 11.083 1.487 14.644 3.811a5.916 5.916 0 0 0 1.27.613v29.689a34.536 34.536 0 0 0-16.095-4.062zM52 42.572a2 2 0 0 1-1.9 1.992A34.521 34.521 0 0 0 34 48.627V18.938a5.963 5.963 0 0 0 1.27-.613c3.561-2.324 8.488-3.607 14.643-3.811a1.965 1.965 0 0 1 1.477.569 1.985 1.985 0 0 1 .61 1.436z"
+              fill="" data-original=""></path>
+          </g>
+        </svg>
+      </span>
+      <h1
+        class="mt-5 mb-8 font_heading text-[1.4rem] font-normal tracking-tight text-center dark:text-white capitalize">
+        6 million books availabley
+      </h1>
+      <p class="mb-3 max-w-md font font-normal text-sm text-center leading-6 text-gray-700 dark:text-gray-400">Lorem
+        ipsum dolor
+        sit amet
+        consectetur
+        adipisicing
+        elit.</p>
+    </div>
+    <div
+      class="max-w-sm p-8 flex flex-col items-center bg-transparent border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+      <span class="duration-100 ease-linear hover:translate-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svgjs="http://svgjs.com/svgjs" width="40" height="40" x="0" y="0" viewBox="0 0 64 64"
+          style="enable-background:new 0 0 512 512" xml:space="preserve">
+          <g>
+            <path
+              d="M63.9 45.27a6.14 6.14 0 0 0-8.48-6.72l-.11.05-11.65 5.9a6.58 6.58 0 0 0-4.61-5.5h-.11l-14.18-4.3a22.11 22.11 0 0 0-15.91 1.14l-7.7 3.64a2 2 0 1 0 1.71 3.62l7.7-3.64a18.1 18.1 0 0 1 13-1l14.29 4.33h.08a2.56 2.56 0 0 1 1.15 4.06l-.07.08a2.55 2.55 0 0 1-2.57.76h-.08l-10.55-3.17a2 2 0 0 0-1.16 3.83l10.48 3.18h.11a6.46 6.46 0 0 0 1.89.28 6.59 6.59 0 0 0 4.6-1.81l15.32-7.8A2.15 2.15 0 0 1 60 44.55a2.16 2.16 0 0 1-.8 1.33c-.83.49-8.26 4.71-20 11.38a5.65 5.65 0 0 1-4.44.49l-18.46-5.6a11.18 11.18 0 0 0-8 .6l-.74.25a2 2 0 0 0 1.71 3.62l.63-.3a7.22 7.22 0 0 1 5.17-.32l18.46 5.6a9.55 9.55 0 0 0 2.8.42 9.73 9.73 0 0 0 4.78-1.26c20.07-11.39 20.23-11.5 20.35-11.6a6.07 6.07 0 0 0 2.44-3.89z"
+              fill="" data-original=""></path>
+            <path
+              d="M32 2.12a16.44 16.44 0 1 0 16.44 16.44A16.45 16.45 0 0 0 32 2.12zM32 31a12.44 12.44 0 1 1 12.44-12.44A12.45 12.45 0 0 1 32 31z"
+              fill="" data-original=""></path>
+            <path d="m36.59 11.15-12 12A2 2 0 1 0 27.41 26l12-12a2 2 0 0 0-2.82-2.82z" fill="" data-original=""></path>
+            <circle cx="28.5" cy="12.56" r="2" fill="" data-original=""></circle>
+            <circle cx="35.5" cy="24.56" r="2" fill="" data-original=""></circle>
+          </g>
+        </svg>
+      </span>
+      <h1
+        class="mt-5 mb-8 font_heading text-[1.4rem] font-normal tracking-tight text-center dark:text-white capitalize">
+        special discounts
+      </h1>
+      <p class="mb-3 max-w-md font font-normal text-sm text-center leading-6 text-gray-700 dark:text-gray-400">Lorem
+        ipsum dolor
+        sit amet
+        consectetur
+        adipisicing
+        elit.</p>
     </div>
   </section>
   <!-- Home Slider Section End -->
-  jkanjkckjac
 </body>
 
 </html>
