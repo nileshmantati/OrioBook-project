@@ -76,11 +76,11 @@
 
   <!-- header Start -->
   <header class="px-8">
-    <nav class="bg-white border-gray-200 dark:bg-gray-900">
-      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+
+    <nav class="bg-transparent border-gray-200 dark:bg-gray-900">
+      <div class="flex flex-wrap items-center justify-between mx-auto py-7">
         <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+          <img src="./img/logo.png" class="h-8" alt="Flowbite Logo" />
         </a>
         <button data-collapse-toggle="navbar-default" type="button"
           class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -91,35 +91,76 @@
               d="M1 1h15M1 7h15M1 13h15" />
           </svg>
         </button>
+
+        <!-- Nav Start  -->
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul
-            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
               <a href="#"
-                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                aria-current="page">Home</a>
+                class="font group flex items-center gap-1 text-lg font-normal py-2 px-3 relative text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#eb5e37] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                aria-current="page">Home
+                <i
+                  class="fa-solid fa-chevron-down fa-2xs group-hover:rotate-180 transition duration-500 ease-in-out"></i>
+                <span
+                  class="absolute bottom-0 w-0 h-[1px] bg-red-600 group-hover:w-full trasition duration-300 ease-out"></span>
+              </a>
             </li>
             <li>
               <a href="#"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                class="font group flex items-center gap-1 text-lg font-normal py-2 px-3 relative text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#eb5e37] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Shop
+                <i
+                  class="fa-solid fa-chevron-down fa-2xs group-hover:rotate-180 transition duration-500 ease-in-out"></i>
+                <span
+                  class="absolute bottom-0 w-0 h-[1px] bg-red-600 group-hover:w-full trasition duration-300 ease-out"></span></a>
             </li>
             <li>
               <a href="#"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+                class="font group flex items-center gap-1 text-lg font-normal py-2 px-3 relative text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#eb5e37] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Products
+                <i
+                  class="fa-solid fa-chevron-down fa-2xs group-hover:rotate-180 transition duration-500 ease-in-out"></i>
+                <span
+                  class="absolute bottom-0 w-0 h-[1px] bg-red-600 group-hover:w-full trasition duration-300 ease-out"></span></a>
             </li>
             <li>
               <a href="#"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+                class="font group flex items-center gap-1 text-lg font-normal py-2 px-3 relative text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#eb5e37] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Blog
+                <i
+                  class="fa-solid fa-chevron-down fa-2xs group-hover:rotate-180 transition duration-500 ease-in-out"></i>
+                <span
+                  class="absolute bottom-0 w-0 h-[1px] bg-red-600 group-hover:w-full trasition duration-300 ease-out"></span></a>
             </li>
             <li>
               <a href="#"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                class="font group flex items-center gap-1 text-lg font-normal py-2 px-3 relative text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#eb5e37] md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Page
+                <i
+                  class="fa-solid fa-chevron-down fa-2xs group-hover:rotate-180 transition duration-500 ease-in-out"></i>
+                <span
+                  class="absolute bottom-0 w-0 h-[1px] bg-red-600 group-hover:w-full trasition duration-300 ease-out"></span></a>
             </li>
           </ul>
         </div>
+        <!-- Nav End  -->
+
+        <div class="header_page_links hidden gap-5 md:flex">
+          <a href="#"
+            class="font text-lg flex items-center gap-2 md:hover:bg-transparent md:border-0 md:hover:text-[#eb5e37] transition duration-300 ease-in-out md:hover:-translate-y-1"><i
+              class="fa-solid fa-magnifying-glass"></i>
+            <span class="hidden lg:flex">Search</span>
+          </a>
+          <a href="#"
+            class="font text-lg flex items-center gap-2 md:hover:bg-transparent md:border-0 md:hover:text-[#eb5e37] transition duration-300 ease-in-out md:hover:-translate-y-1"><i
+              class="fa-regular fa-heart"></i>
+            <span class="hidden lg:flex">Wishlist</span>
+          </a>
+          <a href="#"
+            class="font text-lg flex items-center gap-2 md:hover:bg-transparent md:border-0 md:hover:text-[#eb5e37] transition duration-300 ease-in-out md:hover:-translate-y-1"><i
+              class="fa-solid fa-cart-shopping"></i>
+            <span class="hidden lg:flex">Cart</span>
+          </a>
+        </div>
       </div>
     </nav>
-
   </header>
   <!-- header End -->
 
@@ -128,8 +169,8 @@
   </section> -->
   <!-- Home Slider Section End -->
 
-  <!--  Section Start -->
-  <section class="px-8 flex flex-wrap lg:flex-nowrap">
+  <!-- Speciality Section Start -->
+  <section class="px-8 flex flex-wrap lg:flex-nowrap gap-6">
     <div
       class="w-full sm:w-2/4 lg:w-1/4 p-6 flex flex-col items-center bg-transparent hover:shadow-lg duration-200 ease-linear dark:bg-gray-800 dark:border-gray-700">
       <span class="duration-100 ease-linear hover:translate-x-2">
@@ -149,7 +190,7 @@
         standard
         delivery
       </h1>
-      <p class="mb-3 w-3/4 font font-normal text-sm text-center leading-6 text-gray-700 dark:text-gray-400">
+      <p class="mb-3 w-5/6 font font-normal text-sm text-center leading-6 text-gray-700 dark:text-gray-400">
         Lorem
         ipsum dolor
         sit amet
@@ -174,7 +215,7 @@
         class="mt-5 mb-8 font_heading text-[1.4rem] font-normal tracking-tight text-center dark:text-white capitalize">
         free easy returns
       </h1>
-      <p class="mb-3 w-3/4 font font-normal text-sm text-center leading-6 text-gray-700 dark:text-gray-400">
+      <p class="mb-3 w-5/6 font font-normal text-sm text-center leading-6 text-gray-700 dark:text-gray-400">
         Lorem
         ipsum dolor
         sit amet
@@ -199,7 +240,7 @@
         class="mt-5 mb-8 font_heading text-[1.4rem] font-normal tracking-tight text-center dark:text-white capitalize">
         6 million books availabley
       </h1>
-      <p class="mb-3 w-3/4 font font-normal text-sm text-center leading-6 text-gray-700 dark:text-gray-400">
+      <p class="mb-3 w-5/6 font font-normal text-sm text-center leading-6 text-gray-700 dark:text-gray-400">
         Lorem
         ipsum dolor
         sit amet
@@ -230,7 +271,7 @@
         class="mt-5 mb-8 font_heading text-[1.4rem] font-normal tracking-tight text-center dark:text-white capitalize">
         special discounts
       </h1>
-      <p class="mb-3 w-3/4 font font-normal text-sm text-center leading-6 text-gray-700 dark:text-gray-400">
+      <p class="mb-3 w-5/6 font font-normal text-sm text-center leading-6 text-gray-700 dark:text-gray-400">
         Lorem
         ipsum dolor
         sit amet
@@ -238,9 +279,42 @@
         adipisicing
         elit.</p>
     </div>
-
   </section>
-  <!-- Home Slider Section End -->
+  <!-- Speciality Section End -->
+
+  <!-- Banner Section End -->
+  <section class="px-8">
+    <div class="banners flex gap-8 flex-wrap md:flex-nowrap">
+      <div class="banner_1 w-full md:w-3/4 bg-blue-200 relative overflow-hidden group">
+        <img src="img/banner_1.jpg" alt="Not Found" width="100%" height="100%"
+          class="group-hover:scale-x-105 group-hover:translate-x-2 duration-500 ease-linear">
+        <div class="absolute top-1/2 bottom-auto -translate-y-1/2 left-10 lg:left-52 flex flex-col gap-3">
+          <span class="font uppercase text-white text-base tracking-wider hidden lg:block">new collections</span>
+          <h1 class="font_heading capitalize text-4xl text-white">book festival</h1>
+          <p class="font text-white text-base tracking-widest hidden lg:block">All Books are flat 50% off</p>
+          <a href="#"
+            class="font uppercase text-center py-4 px-12 text-xs text-white bg-black hover:text-black hover:bg-white duration-300 ease-in-out">
+            shop now
+          </a>
+        </div>
+      </div>
+      <div class="banner_2 w-full md:w-1/4 bg-blue-200 relative overflow-hidden group">
+        <img src="img/banner_2.jpg" alt="Not Found" width="100%" height="100%"
+          class="group-hover:scale-x-105 group-hover:translate-x-2 duration-500 ease-linear">
+        <div class="absolute top-1/2 bottom-auto -translate-y-1/2 left-10 lg:left-16 flex flex-col gap-3">
+          <span class="font uppercase text-base tracking-wider hidden lg:block">spring 2024</span>
+          <h1 class="font_heading capitalize text-4xl">popular books</h1>
+          <p class="font text-base tracking-widest hidden lg:block">All Books are flat 20% off</p>
+          <a href="#"
+            class="font uppercase text-center py-4 px-12 text-xs text-white bg-black hover:text-black hover:bg-white duration-300 ease-in-out">
+            shop now
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Banner Section End -->
+
 </body>
 
 </html>
