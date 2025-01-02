@@ -5,13 +5,13 @@
     transform: translateX(-50%);
 }
 
-.owl-theme .owl-dots .owl-dot.active span {
-    /* transition: all ease-in-out .3s; */
-}
+/* .owl-theme .owl-dots .owl-dot.active span {
+    transition: all ease-in-out .3s;
+} */
 
-.home_slider .owl-dots .owl-dot span {
-    /* transition: all ease-in-out .8s; */
-}
+/* .home_slider .owl-dots .owl-dot span {
+    transition: all ease-in-out .8s;
+} */
 
 .home_slider .owl-dots .owl-dot span {
     width: 12px !important;
